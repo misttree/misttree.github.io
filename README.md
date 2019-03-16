@@ -1,25 +1,45 @@
-# detail
+# jekyll-uno
 
-个人简历模板,其实早就写好了，越简单越好,哈哈哈。
-响应式布局，手机，PC都可以看
+Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
 
-# start
-```
-git clone https://gitee.com/dissucc/FeiNiMoShu_ShiJianXu.git
+> :warning:
+  This theme requires ruby and rubygems installed
 
-vscode 打开
+### Features
 
-cd code
+* Clean layout
+* Resposive layout
+* Pagination
+* Syntax highlighting
+* Social links
+* Tags listing page
+* Categories listing page
+* Google Analytics integration
+* Disqus integration
 
-cnpm i
+---
 
-npm run start
+### Install and Test
 
-打包就 npm run build
-```
+1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
+2. Enter the folder: `cd jekyll-uno/`
+3. If you don't have bundler installed: `gem install bundler`
+3. Install Ruby gems: `bundle install`
+4. Start Jekyll server: `bundle exec jekyll serve --watch`
 
-# 栗子
+Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
 
-![输入图片说明](https://gitee.com/uploads/images/2018/0108/153103_808d286f_332899.jpeg "TIM截图20180108153022.jpg")
+---
 
-![输入图片说明](https://gitee.com/uploads/images/2018/0108/153113_f2ac79c3_332899.jpeg "TIM截图20180108153032.jpg")
+### Demo and Download
+
+[Demo](http://joshgerdes.com/jekyll-uno/)
+[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
+
+![jekyll-uno - free Jekyll theme](/screenshot.png)
+
+---
+
+### Copyright and license
+
+It is under [the MIT license](/LICENSE).
