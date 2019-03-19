@@ -1,5 +1,5 @@
-# 关于这个Jekyll模板主题 ⚽⚽⚽
-
+# 关于这个Jekyll模板主题
+欢迎访问我的主页：[William Macbath的博客主页](nkcszhb.xyz)
 ## 预览
 
 ### 首页
@@ -64,7 +64,7 @@
 
 初识Jekyll博客，有必要了解[Jekyll](https://jekyllrb.com/)有关知识。
 
-相关的内容我写了两篇文章可供参考
+相关的内容模板的设计者写两篇文章可供参考
 
 + [基于Jekyll静态框架的Github站点设计](http://xiaokedada.com/2017/02/22/Jekyll-Cpanel/)
 + [Jekyll搭建博客--人类补完计划](http://xiaokedada.com/2017/05/09/Jekyll-second/)
