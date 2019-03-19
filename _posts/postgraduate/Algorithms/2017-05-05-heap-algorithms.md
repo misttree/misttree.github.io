@@ -3,7 +3,7 @@ layout: post
 title: "全排列的经典算法-heap's algorithms"
 date: 2017-05-05 09:00:00 +0800 
 categories: 算法
-tags: Algorithms
+tags: 算法
 
 ---
 * content
