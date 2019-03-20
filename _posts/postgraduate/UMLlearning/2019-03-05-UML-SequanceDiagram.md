@@ -12,6 +12,8 @@ tag: UML类图
 ### 类图的概念
 - UML图本身较为简洁，内部蕴含较深刻的含义
 
+---
+
 ### 针对于具体的类绘制类图
 - UML中使用斜体来表示一种抽象类
 - 在UML的成员属性设置中其中成员前面的 +为属性为Public； -为属性Private； #为属性protect
@@ -38,9 +40,13 @@ tag: UML类图
 - 在UML模式图中，要考虑位于连接线的上方的文字的位置
 - 在完成软件之前已经完成了对于软件的设计
 
+---
+
 ### 类图的关系
 - 两个类之间可能存在有多种关系
 - 0..1以及0..n这种使用的方式表示关于对象的对应关系
+
+---
 
 #### 对应关系
 - 最为简单的即为依赖关系
@@ -56,6 +62,8 @@ tag: UML类图
 - 解释
 	- 一个DiagramEditor可能会对应多个Diagram
 	- 任意时刻仅存在一个Diagram活动中（curent）
+
+---
 
 #### 继承关系
 继承可以分为两种分别对应实现，泛化  
@@ -75,6 +83,8 @@ tag: UML类图
 
 - 类之间存在一些共同的关系，使用一个基类Element对于其进行描述 
 
+---
+
 #### 实例化关系
 - 用于表示两个类之间存在某种实例化的关系
 
@@ -82,6 +92,8 @@ tag: UML类图
 
 - RectangleTool的对象可以用于创建Rectangle的对象
 - UML中的双尖括号：表示一种实例化的关联关系
+
+---
 
 #### 类的多元性关系
 - *表示0个或多个
@@ -94,6 +106,8 @@ tag: UML类图
 - Object identify
 	- 能够唯一标识一个对象的属性成员
 
+---
+
 #### 类之间的关系
 
 ![picture]({{ '/styles/images/uml/classdiagram/010.png' | prepend: site.baseurl }})
@@ -102,10 +116,14 @@ tag: UML类图
 - 使用+加上扮演的角色名进行使用
 - 在两个类之间的连接上添加内容表示两个类之间的关系
 
+---
+
 #### 类自身之间存在一定的关联关系
 - 即类可以与自身之间存在一定的关系
 
 ![picture]({{ '/styles/images/uml/classdiagram/011.png' | prepend: site.baseurl }})
+
+---
 
 #### 类之间关联关系的约定
 - 两个对象之间仅能够存在有一个关联关系的（下图是错误的示范）
@@ -121,6 +139,8 @@ tag: UML类图
 - 对于关联关系的一种限制，一个Customer仅能够拥有一个CurrentAccount一个Customer可以拥有多个Account但是只能够拥有0或1个CurrentAccount
 
 ![picture]({{ '/styles/images/uml/classdiagram/014.png' | prepend: site.baseurl }})
+
+---
 
 #### 聚合关系（Aggregation）
 - 定义：是整体与部分的关系，且部分不可以离开整体而单独存在，部分并不一定是继承自整体
@@ -138,6 +158,8 @@ tag: UML类图
 		- A是B的一部分，B是C的一部分，所以，A是C的一部分
 -合理的判断是否满足之前的两种性质
 
+---
+
 #### 组合关系 Composition
 - 是整体与部分的关系，且部分能够离开整体而单独存在
 - 组合关系不同于聚合关系
@@ -154,12 +176,16 @@ tag: UML类图
 
 ![picture]({{ '/styles/images/uml/classdiagram/018.png' | prepend: site.baseurl }})
 
+---
+
 #### 关系类（Association Class）
 - 用于在描述一种关联关系的时候，使用一个类来进行处理
 - 面向对象的原则：每一个类都应当各司其职
 - 创建较多的类来描述其中存在的关系的属性
 
 ![picture]({{ '/styles/images/uml/classdiagram/019.png' | prepend: site.baseurl }})
+
+---
 
 #### 限制性的关联（Qualified association）
 - 在关联端紧靠源类图标处可以有限定符（qualifier）
@@ -176,8 +202,12 @@ tag: UML类图
 
 - University通过id来唯一的标识Student对象，确立了一种映射关系
 
+---
+
 #### 多继承（Multiple inherited in UML）
 - 多继承：一个类会继承自多个父类的情况
+
+---
 
 #### 掺和类（Mixin class）
 - 一般在考虑针对于一个类设置多种功能时使用
@@ -194,6 +224,8 @@ tag: UML类图
 - 并采用多继承的方式进行处理，实现某一种功能的添加
 
 ![picture]({{ '/styles/images/uml/classdiagram/023.png' | prepend: site.baseurl }})
+
+---
 
 #### 辨别者（Discriminators）
 - 通过依据某种分类的标准，将某一种类分为多个不同的子类
@@ -222,6 +254,8 @@ tag: UML类图
 	- 且一定存在有一个有关系的对象
 - 双向的immutable关系
 
+---
+
 #### 关联关系的实现（Implementation of association class）
 
 ![picture]({{ '/styles/images/uml/classdiagram/026.png' | prepend: site.baseurl }})
@@ -233,3 +267,5 @@ tag: UML类图
 - 一个创建的相关的实例
 
 ![picture]({{ '/styles/images/uml/classdiagram/028.png' | prepend: site.baseurl }})
+
+---

@@ -14,6 +14,8 @@ tag: UML顺序图
 - 用于描述对象之间的协作关系情况，与用例图不同，顺序图的设计与软件设计存在一定的关系
 - 顺序图中显示的是参与交互的对象及其对象之间消息交互的顺序
 
+---
+
 ### 顺序图的主要元素
 <!-- more -->
 - 对象（Actor）
@@ -24,7 +26,7 @@ tag: UML顺序图
 - 消息（Message）
     - 使用带箭头的线表示消息的传递情况
 
-
+---
 
 ### 顺序图的时间线
 - 表示时间的流逝过程
@@ -33,15 +35,21 @@ tag: UML顺序图
 
 ![picture]({{ '/styles/images/uml/sequancediagram/001.png' | prepend: site.baseurl }})
 
+---
+
 ### 删除一个对象的顺序图
 - 在生命线上标注X即可
 
 ![picture]({{ '/styles/images/uml/sequancediagram/002.png' | prepend: site.baseurl }})
 
+---
+
 ### 移动一个对象的顺序图
 
 ![picture]({{ '/styles/images/uml/sequancediagram/003.png' | prepend: site.baseurl }})
 - 与用例图存在extension的关系
+
+---
 
 ### 条件消息
 
@@ -54,6 +62,8 @@ tag: UML顺序图
 ![picture]({{ '/styles/images/uml/sequancediagram/005.png' | prepend: site.baseurl }})
 
 - 并且用户也可以进行泛化的处理
+
+---
 
 ### 异步的消息与多线程的处理方式
 - 使用半箭头的方式进行表示
