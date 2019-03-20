@@ -39,7 +39,7 @@ abbr {text-decoration: none;}
 </ol>
 
 <hr><h4 class="btn btn-primary btn-lg">编程语言</h4><hr>
-<ol class="rectangle-list">
+<ol class="rounded-list">
 <li><a href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank">廖雪峰：Python入门</a></li>
 <li><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank">廖雪峰：Git入门</a></li>
 <li><a href="http://xianbai.me/learn-md/article/about/readme.html" target="_blank">Markdown入门简介</a></li>
@@ -54,3 +54,14 @@ abbr {text-decoration: none;}
 <li><a href="https://scholar.google.com.hk/" target="_blank">谷歌学术</a></li>
 <li><a href="https://bbs.pinggu.org/forum-109-1.html" target="_blank">经管之家</a></li>
 </ol>
+
+<hr><h4 class="btn btn-primary btn-lg">软件推荐</h4><hr>
+<ol class="rounded-list">
+<li><a href="https://pan.baidu.com/s/1lZQDyYAD6eAlycsRUMxBrg" target="_blank">Chrome插件：谷歌服务助手（密码：i573）</a></li>
+<li><a href="https://pan.baidu.com/s/1ZExCrjad5wyjNLlBKBFMmQ" target="_blank">Chrome插件：Adblockplus（密码：o1lh）</a></li>
+<li><a href="https://pan.baidu.com/s/1fFuogSuxVT3bzEOhRv1IXg" target="_blank">Windows软件：Listary（密码：1iub）</a></li>
+<li><a href="https://pan.baidu.com/s/1BzPCsF-uL1ZYs5_N9Zkk0A" target="_blank">Android软件：思维导图（密码：9zus）</a></li>
+<li><a href="https://pan.baidu.com/s/1Rv5RUlBIfBVsoWmD4JIgqg" target="_blank">Chrome：Greasy Fork（密码：aa2w）</a></li>
+<li><a href="https://pan.baidu.com/s/1Q0K4UItpPsRWwWMXq3KawA" target="_blank">Windows软件：蓝灯（密码：9od7）</a></li>
+</ol>
+
