@@ -77,3 +77,5 @@ tag: UML用例图
 ![picture]({{ '/styles/images/uml/usecasediagram/003.gif' | prepend: site.baseurl }})
 
 ![picture]({{ '/styles/images/uml/usecasediagram/004.png' | prepend: site.baseurl }})
+
+---

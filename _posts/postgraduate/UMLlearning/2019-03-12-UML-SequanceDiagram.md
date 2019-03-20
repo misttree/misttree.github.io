@@ -70,3 +70,5 @@ tag: UML顺序图
 - 发送方不会去等待消息的执行结束，而是使用异步的方式进行处理
 
 ![picture]({{ '/styles/images/uml/sequancediagram/005.png' | prepend: site.baseurl }})
+
+---
