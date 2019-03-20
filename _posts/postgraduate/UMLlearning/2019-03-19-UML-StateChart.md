@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "UML状态图"
-date: 2019-03-20 09:00:00 +0800
+date: 2019-03-19 09:00:00 +0800
 categories: UML
-tag: UML
+tag: UML状态图
 
 ---
 * content
