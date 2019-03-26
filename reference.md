@@ -36,6 +36,7 @@ abbr {text-decoration: none;}
 <li><a href="https://greasyfork.org/zh-CN/" target="_blank">浏览器插件：油猴插件</a></li>
 <li><a href="http://www.latexstudio.net/" target="_blank">Latex科技排版工作室</a></li>
 <li><a href="https://www.xiaopiu.com/" target="_blank">产品原型设计与团队实时协作平台</a></li>
+<li><a href="http://616pic.com/" target="_blank">图片资源：图精灵</a></li>
 </ol>
 
 <hr><h4 class="btn btn-primary btn-lg">编程语言</h4><hr>
