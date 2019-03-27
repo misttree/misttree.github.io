@@ -24,4 +24,4 @@ valine_comment:
     enable: true
     leancloud_appid: swJa6eVWfpSTTq87qflGJQuQ-gzGzoHsz
     leancloud_appkey: cMBMv2IIU4dO1hNvUUSAxmLy
-    placeholder: "Just go go"
+    placeholder: "请在此处填写你的评论内容"
