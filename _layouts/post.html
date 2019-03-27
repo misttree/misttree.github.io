@@ -47,7 +47,7 @@ layout: default
         </article>
       </div> -->
       <!--Gitment-->
-      <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+      {% comment %} <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
       <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
       <script>
         var gitment = new Gitment({
@@ -60,8 +60,19 @@ layout: default
           },
         })
         gitment.render('container')
+      </script> {% endcomment %}
+      <div id="comments"></div>
+      <script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+      <script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
+      <script>
+          new Valine({
+              el: '#comments',
+              app_id: 'swJa6eVWfpSTTq87qflGJQuQ-gzGzoHsz',
+              app_key: 'cMBMv2IIU4dO1hNvUUSAxmLy',
+              placeholder: 'Just go go',
+              visitor: true
+          });
       </script>
-      
     </div>
   </div>
 </div>

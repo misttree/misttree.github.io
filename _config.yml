@@ -20,8 +20,8 @@ exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 github_username: misttree
 highlighter: rouge
 markdown: kramdown
-FB:
-  comments :
-    provider : disqus
-    disqus :
-        short_name : William Macbath
+valine_comment:
+    enable: true
+    leancloud_appid: swJa6eVWfpSTTq87qflGJQuQ-gzGzoHsz
+    leancloud_appkey: cMBMv2IIU4dO1hNvUUSAxmLy
+    placeholder: "Just go go"
