@@ -36,9 +36,9 @@
 
 #### 四、添加社会化评论功能
 
-博客采用第三方评论平台[Gitment](https://github.com/imsun/gitment)
+博客采用第三方评论平台:[Valine](https://valine.js.org/)与[leancloud](https://leancloud.cn/)
 
-相关介绍和操作可参考: [社会化评论](http://xiaokedada.com/2017/05/09/Jekyll-second/#社会化网页评论)
+参考的开发链接为：[Jekyll 中添加Valine评论功能](https://www.codepeople.cn/2019/01/03/Jkeyll-Valine/)
 
 #### 五、使用日历控件显示当前日期
 
@@ -48,3 +48,4 @@
 ### 更新时间及记录
 
 + 2019年3月24日 更新项目处理并添加项目内容
++ 2019年3月26日 更新评论功能处理
