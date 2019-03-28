@@ -125,23 +125,22 @@ a {
     -o-transition: all ease 150ms;
     transition: all ease 150ms;
     text-decoration: none;
-    color: #333;
+    color: #409f89;
 }
 
 a:hover {
     text-decoration: underline;
-	color: #f56741;
 }
 
 a:active {
-    color: #f56741;
+    color: #47b5e2;
 }
 
 /* Header Styles */
 header {
     padding: 2em 0 2em 0; 
     text-align: center; 
-    background: #f56741; 
+    background: #409f89; 
     color: #fff;
 }
 
@@ -180,7 +179,7 @@ footer p {
 
 /* Navigation Styles */
 nav {
-    background: #2b2a28 ;
+    background: #444 ;
     padding: 10px 0;
     min-height: 60px;
 }
@@ -198,7 +197,7 @@ nav a {
     height: 60px;
     line-height: 60px;
     display: block;
-	background:#2b2a28;
+	background:#444;
 }
 
 nav h1 a {
@@ -210,9 +209,8 @@ nav h1 a {
 }
 
 nav a:hover {
-    background: #f56741;
+    background: #409f89;
     text-decoration: none;
-	color:#fff;
 }
 
 nav a:active {
@@ -227,7 +225,7 @@ nav a:active {
 
 
 
-nav ul.site {
+nav ul.toplinks {
     padding: 20px 0 0 0;
 }
 
@@ -257,13 +255,13 @@ nav #menu-toggle {
     }
 
 
-    nav ul.site {
+    nav ul.toplinks {
         float: left;
         padding: 0;
         clear: none;
     }
 
-    nav ul.site li {
+    nav ul.toplinks li {
         margin: 0 0 0 10px;
     }
 
