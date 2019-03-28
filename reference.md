@@ -18,6 +18,7 @@ abbr {text-decoration: none;}
 <li><a href="https://github.com/" target="_blank">Github</a></li>
 <li><a href="https://gitee.com/" target="_blank">码云</a></li>
 <li><a href="https://stackoverflow.com/" target="_blank">Stackoverflow</a></li>
+<li><a href="https://www.w3cschool.cn/" target="_blank">W3Cschool</a></li>
 </ol>
 
 <hr><h4 class="btn btn-primary btn-lg">资源网址</h4><hr>
