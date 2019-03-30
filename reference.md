@@ -27,8 +27,9 @@ abbr {text-decoration: none;}
 <li><a href="https://github.com/fuhmmin/it-ebooks-cn" target="_blank">计算机类电子书</a></li>
 <li><a href="https://github.com/FangWW/Document" target="_blank">编程资料</a></li>
 <li><a href="https://www.jqhtml.com/down/" target="_blank">HelloGirl资源下载</a></li>
-<li><a href="http://www.mobanwang.com/" target="_blank">网页特效</a></li>
+<li><a href="http://www.mobanwang.com/" target="_blank">模板网：网页特效</a></li>
 <li><a href="https://www.kancloud.cn/explore/" target="_blank">看云</a></li>
+<li><a href="http://www.yyyweb.com/" target="_blank">前端里</a></li>
 </ol>
 
 <hr><h4 class="btn btn-info btn-lg">实用工具</h4><hr>
