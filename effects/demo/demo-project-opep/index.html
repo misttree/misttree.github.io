@@ -1,368 +1,410 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>南开大学在线编程NKCS-OPEP平台开发：OPEP</title>
-<link rel="alternate" type="application/rss+xml" title="egrappler.com" href="feed/index.html">
-<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet"
-        type="text/css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/prettify.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>在线OJ系统NKCS-OPEP平台开发</title>
+	<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+	<link rel="stylesheet" href="css/style.css">
+
 </head>
-<body data-post="http://www.egrappler.com/free-product-documentation-template/" style="margin-top:45px">
-<nav>
-  <div class="container">
-    <h1>OPEP</h1>
-    <div id="menu">
-      <ul class="toplinks">
-        <li><a href="/">回到首页</a></li>
-        <li><a href="http://www.ojtl.site">项目文档</a></li>
-        <li><a href="https://github.com/NestDream/Bugfree">项目链接</a></li>
-        <li><a href="/me/">个人简介</a></li>
-      </ul>
-    </div>
-    <a id="menu-toggle" href="#" class=" ">&#9776;</a> </div>
-</nav>
-<header>
-  <div class="container">
-    <h2 class="docs-header">南开大学在线编程NKCS-OPEP平台开发</h2>
-  </div>
-</header>
-<section>
-  <div class="container">
-    <ul class="docs-nav" id="menu-left">
-      <li><strong>项目描述</strong></li>
-      <li><a href="#anch0_1" class=" ">项目背景</a></li>
-      <li><a href="#anch0_2" class=" ">操作环境</a></li>
-      <li><a href="#anch0_3" class=" ">参考内容</a></li>
-
-      <li class="separator"></li>
-
-      <li><strong>登陆注册</strong></li>
-
-      <li class="separator"></li>
-
-      <li><strong>个人信息展示</strong></li>
-      <li><a href="#anch2_1" class=" ">学生信息</a></li>
-      <li><a href="#anch2_2" class=" ">教师信息</a></li>
-      <li><a href="#anch2_3" class=" ">管理员信息</a></li>
-
-      <li class="separator"></li>
-
-      <li><strong>教师中心</strong></li>
-      <li><a href="#anch3_1" class=" ">课程管理</a></li>
-      <li><a href="#anch3_2" class=" ">课程内容管理</a></li>
-      <li><a href="#anch3_3" class=" ">实验课管理</a></li>
-      <li><a href="#anch3_4" class=" ">考试管理</a></li>
-      <li><a href="#anch3_5" class=" ">题目管理</a></li>
-      <li><a href="#anch3_6" class=" ">学情统计</a></li>
-
-      <li class="separator"></li>
-
-      <li><strong>学生中心</strong></li>
-
-      <li class="separator"></li>
-
-      <li><strong>管理员中心</strong></li>
-      <li><a href="#anch5_1" class=" ">角色管理</a></li>
-      <li><a href="#anch5_2" class=" ">权限管理</a></li>
-      <li><a href="#anch5_3" class=" ">用户管理</a></li>
-      <li><a href="#anch5_4" class=" ">密码管理</a></li>
-      <li><a href="#anch5_5" class=" ">统计信息</a></li>
-
-    </ul>
-    <div class="docs-content">
-      <h2>项目描述</h2>
-      
-      <h3 id="anch0_1">项目背景</h3>
-      <p>该项目基于南开大学软件学院企业级应用开发课程讲授内容进行设计，由多人参与共同协作完成
-      </p>
-
-      <h3 id="anch0_2">操作环境</h3>
-
-      <ul>
-        <li>编程语言：待定</li>
-        <li>编程平台：待定</li>
-        <li>服务器：待定</li>
-        <li>数据库：待定</li>
-      </ul>
-
-      <h3 id="anch0_3">参考内容</h3>
-      <ul>
-        <li><a href="http://10.134.1.1/#/?_k=01qpqs"> 南开大学软件学院OJ系统（第二版） </a></li>
-        <li><a href="http://acm.nankai.edu.cn/">南开大学ACM官网 </a></li>
-      </ul>
-      <hr>
-
-      <h2>登陆注册</h2>
-      <p>一、登录界面</p>
-      <img src="/effects/demo/demo-project-opep/images/001.png" width=300 height=200 hspace=30 alt="A Quote Machine">
-      <p>
-        登录界面支持账号密码登录，“忘记密码”功能，可以实现将学号发邮件至管理员邮箱，通过管理员重置密码登录。“English”按钮实现国际化，点击之后页面切换为英文显示。 <br />
-        如果有密码重置请求，必须先修改密码，然后才能继续使用系统内部功能；<br />
-        如果当前用户在当前时间有考试的话，必须使用考试用密码。（平时密码无法参加考试）<br />
-        二、注册界面 <br />
-        此功能是否提供待定，因为教师是有课程的选课名单，可以通过用户管理中心批量导入学生名单，初始化学生账号和密码，提供修改密码功能。
-      </p>
-      <hr>
-      <h2>个人信息展示</h2>
-        <h3 id="anch2_1">学生信息</h3>
-          <p>
-          学生登录之后个人信息展示
-          学生界面显示选修的课程块图（按课程开始时间排序）
-          </p>
-        <h3 id="anch2_2">教师信息</h3>
-        <p>
-          教师（包括助教）登录之后显示所授课程的块图
-          </p>
-        <h3 id="anch2_3">管理员信息</h3>
-<p>
-          管理员登录之后展示统计信息，包括有多少年级、多少学生、多少教师、多少课程、多少题目、多少次提交的信息。
-          </p>
-      <hr>
-
-      <h2>教师中心</h2>
-        <h3 id="anch3_1">课程管理</h3>
-         <img src="/effects/demo/demo-project-opep/images/002.png" width=1000 height=200 hspace=30 alt="A Quote Machine">
-         <p>
-          C语言教师登录之后，在课程管理界面显示该教师账号曾创建的课程，随着该账号创建课程数量的增加，应该支持分页显示。<br />
-          (1)“编辑”：能够编辑该课程，包括课程题目，课程开始与结束时间等信息的修改。<br />
-         </p>
-        <img src="/effects/demo/demo-project-opep/images/003.png" width=500 height=200 hspace=30 alt="A Quote Machine">
-        <p>
-          (2)“删除”：允许教师删除自己创建的课程，可在操作中添加“删除”功能。<br />
-          (3)“导入学生”：教师创建一门课程之后，可以使用“导入学生”功能，将选课名单导入到此课程名下。选择“批量导入”导入选课名单。“导入单个学生”功能用于名单中缺失的少数学生。其中“示例文件”为导入名单的示例。<br />
-        </p>
-        <img src="/effects/demo/demo-project-opep/images/004.png" width=500 height=200 hspace=30 alt="A Quote Machine">
-        <p>
-        	(4)“查看学生”：查看该课程下的学生详细信息。
-        </p>
-        <img src="/effects/demo/demo-project-opep/images/005.png" width=500 height=200 hspace=30 alt="A Quote Machine">
-        <p>
-          (5)“复制”：因为课程一个学年一重复，支持该教师复制其创建的某个课程，减去重复创建课程的负担。 <br />
-          (6)查看该课程详情，点击课程管理界面的“详情”，详情界面分主讲课、实验课以及上机考试管理。 <br />
-        </p>
-        <img src="/effects/demo/demo-project-opep/images/006.png" width=200 height=200 hspace=30 alt="A Quote Machine"> <br />
-        <img src="/effects/demo/demo-project-opep/images/007.png" width=1000 height=200 hspace=30 alt="A Quote Machine">
-        <h3>课程内容管理</h3>
-          <h4>新增课程内容（添加练习题目）</h4>
-          <img src="/effects/demo/demo-project-opep/images/008.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <h4>编辑课程内容</h4>
-          <img src="/effects/demo/demo-project-opep/images/009.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <h4>预览课程详细内容</h4>
-          <img src="/effects/demo/demo-project-opep/images/010.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <h4>删除课程内容</h4>
-          <img src="/effects/demo/demo-project-opep/images/011.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-        <h3 id="anch3_2">实验课管理</h3>
-          <h4>新增课时（添加实验题目）</h4>
-          <p>
-          同主讲课新增课时相同。另外支持添加编程练习题目，点击可选择题目，可添加多个编程题目
-          </p>
-          <img src="/effects/demo/demo-project-opep/images/012.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <h4>编辑课时</h4>
-          <p>
-          同主讲课编辑课时相同。
-          </p>
-          <h4>预览显示该课时详情</h4>
-          <p>
-          同主讲课预览显示详情相同。  
-          </p>
-          <h4>删除课时</h4>
-          <p>
-          同主讲课删除课时相同。
-          </p>
-          <h4>实验题目完成情况统计及平时成绩管理</h4>
-          <p>
-          点击“实验课”后的完成情况
-          </p>
-          <img src="/effects/demo/demo-project-opep/images/014.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <p>
-          “完成情况统计”界面：“AC统计”是统计本次实验课的题目全部AC人数，部分AC人数以及未通过人数。“作业提交统计”统计实验课作业的提交情况。“题目详情”展示本次实验课的编程题目信息，操作项需要支持“导出题目数据统计”“导出提交代码”功能。“代码相似度报告”为学生提交代码的相似度比对。
-          </p>
-          <img src="/effects/demo/demo-project-opep/images/015.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <p>
-          其中，“导出数据统计”样式如下所示：
-          </p>
-          <img src="/effects/demo/demo-project-opep/images/016.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <p>
-          “导出提交代码”，可以导出TXT或者json格式的文档，文档中列出该题目对应的每个学生的提交代码。
-          </p>
-          <img src="/effects/demo/demo-project-opep/images/017.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-        <h3 id="anch3_3">考试管理</h3>
-          <h4>创建考试（添加考试题目）</h4>
-          <img src="/effects/demo/demo-project-opep/images/0172.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <img src="/effects/demo/demo-project-opep/images/019.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <img src="/effects/demo/demo-project-opep/images/020.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <img src="/effects/demo/demo-project-opep/images/021.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <img src="/effects/demo/demo-project-opep/images/022.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <h4>查看考试详情</h4>
-          <img src="/effects/demo/demo-project-opep/images/023.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <h4>编辑考试信息</h4>
-          <img src="/effects/demo/demo-project-opep/images/024.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <h4>删除考试信息</h4>
-          <h4>考场管理</h4>
-          <p>
-          （生成考试密码、分配座位、打印考试信息（密码、座位号））
-          </p>
-          <h4>考试完成情况统计</h4>
-          <p>
-          统计考试的题目提交情况，题目AC通过情况。
-          </p>
-        <h3 id="anch3_4">题目管理</h3>
-          <h4>创建题目</h4>
-          <img src="/effects/demo/demo-project-opep/images/025.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <p>
-          支持创建时题目的随时预览，如红色箭头所示，下图为“预览”界面展示。
-          </p>
-          <img src="/effects/demo/demo-project-opep/images/026.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <p>
-          为创建的题目添加标签：“公开”，“不公开”，以及难度：“High”，“Medium”，“Low”。
-          </p>
-          <img src="/effects/demo/demo-project-opep/images/027.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <p>
-          其中选择“公开”表示题目创建之后，学生登陆后首页显示所公开的题目，并可查询。
-          </p>
-          <img src="/effects/demo/demo-project-opep/images/028.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <h4>题目展示样式</h4>
-          <img src="/effects/demo/demo-project-opep/images/029.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <ul>
-            <li>“id”列为题目的创建id;
-            <li>“难度”列展示题目的难易程度，可以根据题目名称，题目的创建人，题目的难易程度进行筛选； 
-            <li>Total展示该题目总的提交次数；
-            <li>“ACRate”展示该道题目的AC通过率
-            <li>“操作”列包含编辑、预览和删除功能选项。
-          </ul>
-          <h4>题目提交记录及提交内容查看</h4>
-          <img src="/effects/demo/demo-project-opep/images/030.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <p>
-          可根据题目id，提交人，提交时间段等字段进行筛选和查询学生的提交记录信息。<br />
-          “查看源代码”显示学生所提交的代码。
-          </p>
-          <img src="/effects/demo/demo-project-opep/images/031.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-        <h3 id="anch3_5">学情统计</h3>
-          <h4>提交情况统计</h4>
-          <img src="/effects/demo/demo-project-opep/images/032.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <p>
-          可根据题目id，提交人，提交时间段等字段进行筛选和查询学生的提交记录信息。
-          </p>
-          <h4>实验题目完成情况统计及平时成绩管理</h4>
-          <p>
-          点击“实验课”后的完成情况。
-          </p>
-          <img src="/effects/demo/demo-project-opep/images/0322.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <p>
-          “完成情况统计”界面：“AC统计”是统计本次实验课的题目全部AC人数，部分AC人数以及未通过人数。“作业提交统计”统计实验课作业的提交情况。“题目详情”展示本次实验课的编程题目信息，操作项需要支持“导出题目数据统计”“导出提交代码”功能。“代码相似度报告”为学生提交代码的相似度比对。
-          </p>
-          <img src="/effects/demo/demo-project-opep/images/033.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-          <h4>考试完成情况统计及平时成绩管理成绩管理</h4>
-      <hr>
-
-      <h2>学生中心</h2>
-      <p>
-      1.学生进入之后的首页展示。题目列表显示状态为“公开”的题目的相关信息，“即将截止”区列出提醒事项，“提交统计”为学生的个人提交情况。
-      </p>
-      <img src="/effects/demo/demo-project-opep/images/034.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-      <p>
-      2.课程，显示课程板块图。
-      </p>
-      <img src="/effects/demo/demo-project-opep/images/035.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-      <hr>
-
-      <h2>管理员中心</h2>
-        <p>
-          提供一个用户管理中心，统一管理角色、权限、用户。例如创建角色：学生、教师、管理员、助教老师、助教学生。然后为每一种角色根据需要功能对应分配操作权限。<br />
-          操作权限表acl（Access Control List）可以包括如下相关权限：
-        </p>
-        <img src="/effects/demo/demo-project-opep/images/036.png" width=200 height=200 hspace=30 alt="A Quote Machine">
-        <img src="/effects/demo/demo-project-opep/images/037.png" width=200 height=200 hspace=30 alt="A Quote Machine"> <br />
-        <h3 id="anch5_1">角色管理</h3>
-        <img src="/effects/demo/demo-project-opep/images/038.png" width=200 height=200 hspace=30 alt="A Quote Machine">
-        <img src="/effects/demo/demo-project-opep/images/039.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-        <p>
-        “新建角色”界面：
-        </p>
-        <img src="/effects/demo/demo-project-opep/images/040.png" width=600 height=200 hspace=30 alt="A Quote Machine">        
-        <h3 id="anch5_2">权限管理</h3>
-        <img src="/effects/demo/demo-project-opep/images/041.png" width=200 height=200 hspace=30 alt="A Quote Machine">
-        <img src="/effects/demo/demo-project-opep/images/042.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-        <p>
-        “增设权限”界面：
-        </p>
-        <img src="/effects/demo/demo-project-opep/images/043.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-        <p>
-       “编辑权限”界面：
-        </p>
-        <img src="/effects/demo/demo-project-opep/images/044.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-        <h3 id="anch5_3">用户管理</h3>
-        <img src="/effects/demo/demo-project-opep/images/045.png" width=200 height=200 hspace=30 alt="A Quote Machine">
-        <p>
-        用户管理包括对所有用户，即学生、教师、助教、管理员本身的管理。操作包含编辑、删除、重置密码等。需要支持根据字段名称进行筛选的操作。
-        </p>
-        <img src="/effects/demo/demo-project-opep/images/046.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-        <h3 id="anch5_4">密码管理</h3>
-        <p>
-        能够向指定用户群推送密码重置的消息
-        </p>
-        <h3 id="anch5_5">统计信息</h3>
-        <p>
-        （1）统计用户10天内的登录情况，包括登录时间段等。
-        </p>
-        <img src="/effects/demo/demo-project-opep/images/047.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-        <p>
-          点击“查看所有”,展示10天内的所有用户登录情况。
-        </p>
-        <img src="/effects/demo/demo-project-opep/images/048.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-         <p>
-          点击“查看”对应某一用户的登录信息，展示该用户的10天内登录情况。 <br />
-          例如：“管理员”账户10天内的登录情况：
-        </p>
-        <img src="/effects/demo/demo-project-opep/images/049.png" width=600 height=200 hspace=30 alt="A Quote Machine">
-        <p>
-          （2）统计学生关于题目“测试用例标签”中每一个标签对应的测试用例的通过情况。<br />
-          （3）统计男女生的题目通过情况以及作业提交情况。<br />
-          （4）根据编程作业规定的答题时间，划定时间段，统计作业在某一时间段提交的情况，了解学生学习态度。<br />
-          （5）统计学生的每道题目的提交次数，了解学生编程能力。
-        </p>
-         <div id="comments"></div>
-      <script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-      <script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
-      <script>
-          new Valine({
-              el: '#comments',
-              app_id: 'swJa6eVWfpSTTq87qflGJQuQ-gzGzoHsz',
-              app_key: 'cMBMv2IIU4dO1hNvUUSAxmLy',
-              placeholder: '请在此处填写你的评论内容',
-              visitor: true
-          });
-      </script>
-    </div>
+<body>
+	
+	<div id="wrapper">
+        <div class="overlay"></div>
     
-  </div>
-</section>
-<section class="vibrant centered">
-  <div class="container">
-    <h4>本文档为软件的开发文档，用作记录项目的开发经历使用</h4>
-  </div>
-</section>
-<footer>
-  <div class="container">
-    <p> Copyright © 2019 <a href="https://github.com/misttree"> William Macbath.</a> All rights reserved. </p>
-    <p> Powered by <a href="https://jekyllrb.com/"> Jekyll，</a> Data by <a href="https://tongji.baidu.com/web/welcome/login/"> Bai Du.</a> </p>
-  </div>
-</footer>
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                <a href="#">
+                    HLH
+                </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-home"></i>首页</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> 项目描述 <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">项目的内容概述</li>
+                    <li><a href="#">项目背景</a></li>
+                    <li><a href="#">操作环境</a></li>
+                    <li><a href="#">参考内容</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> 登陆注册 <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">登陆注册界面</li>
+                    <li><a href="#">登陆界面</a></li>
+                    <li><a href="#">注册界面</a></li>
+                  </ul>
+                </li>
+                  <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> 个人信息展示 <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">个人信息展示界面</li>
+                    <li><a href="#">学生信息</a></li>
+                    <li><a href="#">教师信息</a></li>
+                    <li><a href="#">管理员信息</a></li>
+                  </ul>
+                </li>
+                  <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> 教师中心 <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">教师端界面</li>
+                    <li><a href="#">课程管理</a></li>
+                    <li><a href="#">课程内容管理</a></li>
+                    <li><a href="#">实验课管理</a></li>
+                    <li><a href="#">考试管理</a></li>
+                    <li><a href="#">题目管理</a></li>
+                    <li><a href="#">学情统计</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> 学生中心 <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">学生端界面</li>
+                    <li><a href="#">个人提交情况</a></li>
+                    <li><a href="#">课程板块</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> 管理员中心 <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">管理员端界面</li>
+                    <li><a href="#">角色管理</a></li>
+                    <li><a href="#">权限管理</a></li>
+                    <li><a href="#">用户管理</a></li>
+                    <li><a href="#">密码管理</a></li>
+                    <li><a href="#">统计信息</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
 
-<script src="js/jquery.min.js"></script> 
- 
-<script type="text/javascript" src="js/prettify/prettify.js"></script> 
-<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
-<script src="js/layout.js"></script>
- <script src="js/jquery.localscroll-1.2.7.js" type="text/javascript"></script>
- <script src="js/jquery.scrollTo-1.4.3.1.js" type="text/javascript"></script>
-  <!--Dynamically creates analytics markup-->
-  <?php include("http://www.egrappler.com/analytics.php");?>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+          </button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                      
+                      <h1><center>在线OJ系统NKCS-OPEP平台开发</center></h1>
+                      
+                       <h2>1 项目描述</h2>
+                    
+                    <h3 id="anch0_1">1.1 项目背景</h3>
+                    <p>
+                    该项目基于南开大学软件学院企业级应用开发课程讲授内容进行设计，由多人参与共同协作完成
+                    </p>
+
+                    <h3 id="anch0_2">1.2 操作环境</h3>
+
+                    <ul>
+                      <li>编程语言：待定</li>
+                      <li>编程平台：待定</li>
+                      <li>原型图设计：<a href="https://www.xiaopiu.com/web/byId?type=project&id=5c88fbed3f4d4f46a1ec72fe">xiaopiu</a></li>
+                      <li>服务器：待定</li>
+                      <li>数据库：待定</li>
+                    </ul>
+
+                    <h3 id="anch0_3">1.3 参考内容</h3>
+                    <ul>
+                      <li><a href="http://10.134.1.1/#/?_k=01qpqs"> 南开大学软件学院OJ系统（第二版） </a></li>
+                      <li><a href="http://acm.nankai.edu.cn/">南开大学ACM官网 </a></li>
+                      <li><a href="https://docs.qq.com/doc/DQ1BHYUxPZkNmRUlI">统计中心开发文档</a></li>
+                      <li><a href="https://shimo.im/docs/vMHQyGl6g7AMdYBL/read">学生中心开发文档</a></li>
+                    </ul>
+                    <hr>
+
+                    <h2>2 登陆注册</h2>
+                    <h3>2.1 登录界面</h3>
+                    <img src="images/001.png" width=300 height=300 hspace=30 alt="A Quote Machine">
+                    <p>
+                      登录界面支持账号密码登录，“忘记密码”功能，可以实现将学号发邮件至管理员邮箱，通过管理员重置密码登录。“English”按钮实现国际化，点击之后页面切换为英文显示。 <br />
+                      如果有密码重置请求，必须先修改密码，然后才能继续使用系统内部功能；<br />
+                      如果当前用户在当前时间有考试的话，必须使用考试用密码。（平时密码无法参加考试）<br />
+                    <h3>2.2 注册界面 </h3>
+                    <p>
+                      此功能是否提供待定，因为教师是有课程的选课名单，可以通过用户管理中心批量导入学生名单，初始化学生账号和密码，提供修改密码功能。
+                    </p>
+                    <hr>
+                    <h2>3 个人信息展示</h2>
+                      <h3 id="anch2_1">3.1 学生信息</h3>
+                        <p>
+                        学生登录之后个人信息展示
+                        学生界面显示选修的课程块图（按课程开始时间排序）
+                        </p>
+                      <h3 id="anch2_2">3.2 教师信息</h3>
+                      <p>
+                        教师（包括助教）登录之后显示所授课程的块图
+                        </p>
+                      <h3 id="anch2_3">3.3 管理员信息</h3>
+              <p>
+                        管理员登录之后展示统计信息，包括有多少年级、多少学生、多少教师、多少课程、多少题目、多少次提交的信息。
+                        </p>
+                    <hr>
+
+                    <h2>4 教师中心</h2>
+                      <h3 id="anch3_1">4.1 课程管理</h3>
+                      <img src="images/002.png" width=700 height=300 hspace=30 alt="A Quote Machine">
+                      <p>
+                        C语言教师登录之后，在课程管理界面显示该教师账号曾创建的课程，随着该账号创建课程数量的增加，应该支持分页显示。<br />
+                        (1)“编辑”：能够编辑该课程，包括课程题目，课程开始与结束时间等信息的修改。<br />
+                      </p>
+                      <img src="images/003.png" width=500 height=300 hspace=30 alt="A Quote Machine">
+                      <p>
+                        (2)“删除”：允许教师删除自己创建的课程，可在操作中添加“删除”功能。<br />
+                        (3)“导入学生”：教师创建一门课程之后，可以使用“导入学生”功能，将选课名单导入到此课程名下。选择“批量导入”导入选课名单。“导入单个学生”功能用于名单中缺失的少数学生。其中“示例文件”为导入名单的示例。<br />
+                      </p>
+                      <img src="images/004.png" width=500 height=300 hspace=30 alt="A Quote Machine">
+                      <p>
+                        (4)“查看学生”：查看该课程下的学生详细信息。
+                      </p>
+                      <img src="images/005.png" width=500 height=400 hspace=30 alt="A Quote Machine">
+                      <p>
+                        (5)“复制”：因为课程一个学年一重复，支持该教师复制其创建的某个课程，减去重复创建课程的负担。 <br />
+                        (6)查看该课程详情，点击课程管理界面的“详情”，详情界面分主讲课、实验课以及上机考试管理。 <br />
+                      </p>
+                      <img src="images/006.png" width=200 height=200 hspace=30 alt="A Quote Machine"> <br />
+                      <img src="images/007.png" width=1000 height=200 hspace=30 alt="A Quote Machine">
+                      <h3>4.2 课程内容管理</h3>
+                        <h4>4.2.1 新增课程内容（添加练习题目）</h4>
+                        <img src="images/008.png" width=500 height=400 hspace=30 alt="A Quote Machine">
+                        <h4>4.2.2 编辑课程内容</h4>
+                        <img src="images/009.png" width=500 height=300 hspace=30 alt="A Quote Machine">
+                        <h4>4.2.3 预览课程详细内容</h4>
+                        <img src="images/010.png" width=500 height=300 hspace=30 alt="A Quote Machine">
+                        <h4>4.2.4 删除课程内容</h4>
+                        <img src="images/011.png" width=600 height=150 hspace=30 alt="A Quote Machine">
+                      <h3 id="anch3_2">4.3 实验课管理</h3>
+                        <h4>4.3.1 新增课时（添加实验题目）</h4>
+                        <p>
+                        同主讲课新增课时相同。另外支持添加编程练习题目，点击可选择题目，可添加多个编程题目
+                        </p>
+                        <img src="images/012.png" width=500 height=300 hspace=30 alt="A Quote Machine">
+                        <h4>4.3.2 编辑课时</h4>
+                        <p>
+                        同主讲课编辑课时相同。
+                        </p>
+                        <h4>4.3.3 预览显示该课时详情</h4>
+                        <p>
+                        同主讲课预览显示详情相同。  
+                        </p>
+                        <h4>4.3.4 删除课时</h4>
+                        <p>
+                        同主讲课删除课时相同。
+                        </p>
+                        <h4>4.3.5 实验题目完成情况统计及平时成绩管理</h4>
+                        <p>
+                        点击“实验课”后的完成情况
+                        </p>
+                        <img src="images/014.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <p>
+                        “完成情况统计”界面：“AC统计”是统计本次实验课的题目全部AC人数，部分AC人数以及未通过人数。“作业提交统计”统计实验课作业的提交情况。“题目详情”展示本次实验课的编程题目信息，操作项需要支持“导出题目数据统计”“导出提交代码”功能。“代码相似度报告”为学生提交代码的相似度比对。
+                        </p>
+                        <img src="images/015.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <p>
+                        其中，“导出数据统计”样式如下所示：
+                        </p>
+                        <img src="images/016.png" width=600 height=1000 hspace=30 alt="A Quote Machine">
+                        <p>
+                        “导出提交代码”，可以导出TXT或者json格式的文档，文档中列出该题目对应的每个学生的提交代码。
+                        </p>
+                        <img src="images/017.png" width=600 height=1000 hspace=30 alt="A Quote Machine">
+                      <h3 id="anch3_3">4.4 考试管理</h3>
+                        <h4>4.4.1 创建考试（添加考试题目）</h4>
+                        <img src="images/0172.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <img src="images/019.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <img src="images/020.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <img src="images/021.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <img src="images/022.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <h4>4.4.2 查看考试详情</h4>
+                        <img src="images/023.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <h4>4.4.3 编辑考试信息</h4>
+                        <img src="images/024.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <h4>4.4.4 删除考试信息</h4>
+                        <h4>4.4.5 考场管理</h4>
+                        <p>
+                        （生成考试密码、分配座位、打印考试信息（密码、座位号））
+                        </p>
+                        <h4>4.4.6 考试完成情况统计</h4>
+                        <p>
+                        统计考试的题目提交情况，题目AC通过情况。
+                        </p>
+                      <h3 id="anch3_4">4.5 题目管理</h3>
+                        <h4>4.5.1 创建题目</h4>
+                        <img src="images/025.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <p>
+                        支持创建时题目的随时预览，如红色箭头所示，下图为“预览”界面展示。
+                        </p>
+                        <img src="images/026.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <p>
+                        为创建的题目添加标签：“公开”，“不公开”，以及难度：“High”，“Medium”，“Low”。
+                        </p>
+                        <img src="images/027.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <p>
+                        其中选择“公开”表示题目创建之后，学生登陆后首页显示所公开的题目，并可查询。
+                        </p>
+                        <img src="images/028.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <h4>4.5.2 题目展示样式</h4>
+                        <img src="images/029.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <ul>
+                          <li>“id”列为题目的创建id;
+                          <li>“难度”列展示题目的难易程度，可以根据题目名称，题目的创建人，题目的难易程度进行筛选； 
+                          <li>Total展示该题目总的提交次数；
+                          <li>“ACRate”展示该道题目的AC通过率
+                          <li>“操作”列包含编辑、预览和删除功能选项。
+                        </ul>
+                        <h4>4.5.3 题目提交记录及提交内容查看</h4>
+                        <img src="images/030.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <p>
+                        可根据题目id，提交人，提交时间段等字段进行筛选和查询学生的提交记录信息。<br />
+                        “查看源代码”显示学生所提交的代码。
+                        </p>
+                        <img src="images/031.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                      <h3 id="anch3_5">4.6 学情统计</h3>
+                        <h4>4.6.1 提交情况统计</h4>
+                        <img src="images/032.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <p>
+                        可根据题目id，提交人，提交时间段等字段进行筛选和查询学生的提交记录信息。
+                        </p>
+                        <h4>4.6.2 实验题目完成情况统计及平时成绩管理</h4>
+                        <p>
+                        点击“实验课”后的完成情况。
+                        </p>
+                        <img src="images/0322.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <p>
+                        “完成情况统计”界面：“AC统计”是统计本次实验课的题目全部AC人数，部分AC人数以及未通过人数。“作业提交统计”统计实验课作业的提交情况。“题目详情”展示本次实验课的编程题目信息，操作项需要支持“导出题目数据统计”“导出提交代码”功能。“代码相似度报告”为学生提交代码的相似度比对。
+                        </p>
+                        <img src="images/033.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                        <h4>4.6.3 考试完成情况统计及平时成绩管理成绩管理</h4>
+                    <hr>
+
+                    <h2>5 学生中心</h2>
+                    <h3>5.1 个人提交情况</h3>
+                    <p>
+                    学生进入之后的首页展示。题目列表显示状态为“公开”的题目的相关信息，“即将截止”区列出提醒事项，“提交统计”为学生的个人提交情况。
+                    </p>
+                    <img src="images/034.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                    <h3>5.2 课程板块</h3>
+                    <p>
+                    用于显示课程板块图。
+                    </p>
+                    <img src="images/035.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                    <hr>
+
+                    <h2>6 管理员中心</h2>
+                      <p>
+                        提供一个用户管理中心，统一管理角色、权限、用户。例如创建角色：学生、教师、管理员、助教老师、助教学生。然后为每一种角色根据需要功能对应分配操作权限。<br />
+                        操作权限表acl（Access Control List）可以包括如下相关权限：
+                      </p>
+                      <img src="images/036.png" width=200 height=300 hspace=30 alt="A Quote Machine">
+                      <img src="images/037.png" width=200 height=500 hspace=30 alt="A Quote Machine"> <br />
+                      <h3 id="anch5_1">6.1 角色管理</h3>
+                      <img src="images/038.png" width=200 height=200 hspace=30 alt="A Quote Machine">
+                      <img src="images/039.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                      <p>
+                      “新建角色”界面：
+                      </p>
+                      <img src="images/040.png" width=600 height=200 hspace=30 alt="A Quote Machine">        
+                      <h3 id="anch5_2">6.2 权限管理</h3>
+                      <img src="images/041.png" width=200 height=200 hspace=30 alt="A Quote Machine">
+                      <img src="images/042.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                      <p>
+                      “增设权限”界面：
+                      </p>
+                      <img src="images/043.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                      <p>
+                    “编辑权限”界面：
+                      </p>
+                      <img src="images/044.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                      <h3 id="anch5_3">6.3 用户管理</h3>
+                      <img src="images/045.png" width=200 height=200 hspace=30 alt="A Quote Machine">
+                      <p>
+                      用户管理包括对所有用户，即学生、教师、助教、管理员本身的管理。操作包含编辑、删除、重置密码等。需要支持根据字段名称进行筛选的操作。
+                      </p>
+                      <img src="images/046.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                      <h3 id="anch5_4">6.4 密码管理</h3>
+                      <p>
+                      能够向指定用户群推送密码重置的消息
+                      </p>
+                      <h3 id="anch5_5">6.5 统计信息</h3>
+                      <p>
+                      （1）统计用户10天内的登录情况，包括登录时间段等。
+                      </p>
+                      <img src="images/047.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                      <p>
+                        点击“查看所有”,展示10天内的所有用户登录情况。
+                      </p>
+                      <img src="images/048.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                      <p>
+                        点击“查看”对应某一用户的登录信息，展示该用户的10天内登录情况。 <br />
+                        例如：“管理员”账户10天内的登录情况：
+                      </p>
+                      <img src="images/049.png" width=600 height=200 hspace=30 alt="A Quote Machine">
+                      <p>
+                        （2）统计学生关于题目“测试用例标签”中每一个标签对应的测试用例的通过情况。<br />
+                        （3）统计男女生的题目通过情况以及作业提交情况。<br />
+                        （4）根据编程作业规定的答题时间，划定时间段，统计作业在某一时间段提交的情况，了解学生学习态度。<br />
+                        （5）统计学生的每道题目的提交次数，了解学生编程能力。
+                      </p>
+                      <hr />
+                    </div>
+                </div>
+                <center>
+                <div class="container">
+                  <p> Copyright © 2019 <a href="https://github.com/misttree"> William Macbath.</a> All rights reserved. </p>
+                  <p> Powered by <a href="https://jekyllrb.com/"> Jekyll，</a> Data by <a href="https://tongji.baidu.com/web/welcome/login/"> Bai Du.</a> </p>
+                </div>
+                </center>
+            </div>
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+		  var trigger = $('.hamburger'),
+		      overlay = $('.overlay'),
+		     isClosed = false;
+
+		    trigger.click(function () {
+		      hamburger_cross();      
+		    });
+
+		    function hamburger_cross() {
+
+		      if (isClosed == true) {          
+		        overlay.hide();
+		        trigger.removeClass('is-open');
+		        trigger.addClass('is-closed');
+		        isClosed = false;
+		      } else {   
+		        overlay.show();
+		        trigger.removeClass('is-closed');
+		        trigger.addClass('is-open');
+		        isClosed = true;
+		      }
+		  }
+		  
+		  $('[data-toggle="offcanvas"]').click(function () {
+		        $('#wrapper').toggleClass('toggled');
+		  });  
+		});
+	</script>
 </body>
 </html>
