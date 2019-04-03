@@ -19,6 +19,8 @@ abbr {text-decoration: none;}
 <li><a href="https://gitee.com/" target="_blank">码云</a></li>
 <li><a href="https://stackoverflow.com/" target="_blank">Stackoverflow</a></li>
 <li><a href="https://www.w3cschool.cn/" target="_blank">W3Cschool</a></li>
+<li><a href="https://www.nowcoder.com/" target="_blank">牛客网</a></li>
+<li><a href="https://leetcode-cn.com/" target="_blank">Leetcode</a></li>
 </ol>
 
 <hr><h4 class="btn btn-primary btn-lg">资源网址</h4><hr>
@@ -40,6 +42,7 @@ abbr {text-decoration: none;}
 <li><a href="http://www.latexstudio.net/" target="_blank">Latex科技排版工作室</a></li>
 <li><a href="https://www.xiaopiu.com/" target="_blank">产品原型设计与团队实时协作平台</a></li>
 <li><a href="http://616pic.com/" target="_blank">图片资源：图精灵</a></li>
+<li><a href="https://shimo.im/" target="_blank">石墨文档</a></li>
 </ol>
 
 <hr><h4 class="btn btn-primary btn-lg">编程语言</h4><hr>
