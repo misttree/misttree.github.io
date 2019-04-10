@@ -14,7 +14,7 @@ tag: UML类图
 
 ---
 
-### 针对于具体的类绘制类图
+### 类图的绘制
 - UML中使用斜体来表示一种抽象类
 - 在UML的成员属性设置中其中成员前面的 +为属性为Public； -为属性Private； #为属性protect
 
@@ -43,25 +43,38 @@ tag: UML类图
 ---
 
 ### 类图的关系
-- 两个类之间可能存在有多种关系
-- 0..1以及0..n这种使用的方式表示关于对象的对应关系
+- 两个类之间可能存在有多种关系，但是两个对象之间只能有一种关系
+- 类图中的关系可以分为以下几部分
+
+![picture]({{ '/styles/images/uml/classdiagram/029.PNG' | prepend: site.baseurl }})
 
 ---
 
-#### 对应关系
-- 最为简单的即为依赖关系
+#### 依赖关系
+- 类之间的关系中最为简单的即为依赖关系
+- 依赖(Dependency)关系是类与类之间的联接，依赖关系表示一个类依赖于另一个类的定义
+- 并且依赖关系在UML图中使用虚线+箭头的方式进行表示
+- 在依赖关系的左右添加数字可以用于标识两个类对应的个数关系
+
+![picture]({{ '/styles/images/uml/classdiagram/030.gif' | prepend: site.baseurl }})
+
+---
+
+#### 关联关系
 
 ![picture]({{ '/styles/images/uml/classdiagram/001.png' | prepend: site.baseurl }})
 
 - 表示一种两个类的内部存在某种函数调用的对应关系
 	- 关联暗示了依赖，二者都用来表示无法用聚合和组合表示的关系
 	- 如果两边都不存在有箭头的话，则可以表示是一种双向的依赖关系
+	- 在关联关系的左右添加数字可以用于标识两个类对应的个数关系
 
 ![picture]({{ '/styles/images/uml/classdiagram/002.png' | prepend: site.baseurl }})
 
 - 解释
 	- 一个DiagramEditor可能会对应多个Diagram
 	- 任意时刻仅存在一个Diagram活动中（curent）
+
 
 ---
 
@@ -73,15 +86,57 @@ tag: UML类图
 
 ![picture]({{ '/styles/images/uml/classdiagram/003.png' | prepend: site.baseurl }})
 
-- 一种更为直接的方式：类的继承  
+- 对于上图的继承关系做一定的修改，得到一种更为直接的方式：类的继承  
 
 ![picture]({{ '/styles/images/uml/classdiagram/004.png' | prepend: site.baseurl }})
 
-- 进一步得到拓展得到的结果  
+- 再进一步得到拓展得到的结果  
 
 ![picture]({{ '/styles/images/uml/classdiagram/005.png' | prepend: site.baseurl }})
 
 - 类之间存在一些共同的关系，使用一个基类Element对于其进行描述 
+
+---
+
+
+#### 聚合关系（Aggregation）
+- 定义：是整体与部分的关系，且部分不可以离开整体而单独存在，且部分的生命周期与整体相同
+- 聚合关系是关联关系的一种，是强的关联关系
+- 关联和聚合在语法上无法区分，必须考察具体的逻辑关系
+
+![picture]({{ '/styles/images/uml/classdiagram/015.png' | prepend: site.baseurl }})
+
+- 标识一个类于其他类之间的包含关系（使用一个空心的菱形来标识，指向聚合的本体）
+
+- 聚合关系限制的属性
+	- **反自身**：
+		- 给定一个对象，该对象不能够与自身存在关系（不是类）
+	- **推导关系**：
+		- A是B的一部分，B是C的一部分，所以，A是C的一部分
+-合理的判断是否满足之前的两种性质，即可以判断是否为聚合关系
+
+---
+
+#### 组合关系 Composition
+- 定义：是整体与部分的关系，且部分不能够离开整体而单独存在，组合中部分的生命周期与整体的生命周期不相同
+
+- 组合关系不同于聚合关系
+	- 使用实心菱形来进行表示，并且指向组合方
+
+![picture]({{ '/styles/images/uml/classdiagram/016.png' | prepend: site.baseurl }})
+
+---
+
+### 类图的其他概念
+
+#### 类内部的关系
+- 用于描述针对于类的内部的存在的一种关系
+
+![picture]({{ '/styles/images/uml/classdiagram/017.png' | prepend: site.baseurl }})
+
+- 跳出连接的方式，进行处理
+
+![picture]({{ '/styles/images/uml/classdiagram/018.png' | prepend: site.baseurl }})
 
 ---
 
@@ -139,42 +194,6 @@ tag: UML类图
 - 对于关联关系的一种限制，一个Customer仅能够拥有一个CurrentAccount一个Customer可以拥有多个Account但是只能够拥有0或1个CurrentAccount
 
 ![picture]({{ '/styles/images/uml/classdiagram/014.png' | prepend: site.baseurl }})
-
----
-
-#### 聚合关系（Aggregation）
-- 定义：是整体与部分的关系，且部分不可以离开整体而单独存在，部分并不一定是继承自整体
-	- 且整体与部分的生命周期是相同的
-- 聚合关系是关联关系的一种，是强的关联关系
-- 关联和聚合在语法上无法区分，必须考察具体的逻辑关系
-
-![picture]({{ '/styles/images/uml/classdiagram/015.png' | prepend: site.baseurl }})
-
-- 标识一个类于其他类之间的包含关系（使用一个空心的菱形来标识）
-- 聚合关系限制的属性
-	- 反自身（Anti-symmetry）：
-		- 给定一个对象，该对象不能够与自身存在关系（不是类）
-	- 推导关系（传递性）：
-		- A是B的一部分，B是C的一部分，所以，A是C的一部分
--合理的判断是否满足之前的两种性质
-
----
-
-#### 组合关系 Composition
-- 是整体与部分的关系，且部分能够离开整体而单独存在
-- 组合关系不同于聚合关系
-	- Mail Message与Attachment二者并不存在一对一的附属关系
-	- 可以使用空的菱形来进行表示
-
-![picture]({{ '/styles/images/uml/classdiagram/016.png' | prepend: site.baseurl }})
-
-- 用于描述针对于类的内部的存在的一种关系
-
-![picture]({{ '/styles/images/uml/classdiagram/017.png' | prepend: site.baseurl }})
-
-- 跳出连接的方式，进行处理
-
-![picture]({{ '/styles/images/uml/classdiagram/018.png' | prepend: site.baseurl }})
 
 ---
 

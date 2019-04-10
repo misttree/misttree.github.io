@@ -29,7 +29,6 @@ tag: UML介绍
 - 分析阶段与设计阶段
     - 分析阶段：依据需求文档来进行分析
 - 97年是UML语言的正式诞生时间
-- UML语言的使用工具
 
 ### 视图（Views）
 - 用例视图 Use Case View
@@ -54,9 +53,4 @@ tag: UML介绍
 - 对象图（Object Diagram）
 - 类图（Class Diagram）
 - 状态图（State Diagram）
-- 静态结构图
-- 包图
-- 序列图
-- 协作图
-- 组件图
-- 部署图
+- 序列图（Sequence Diagram）
