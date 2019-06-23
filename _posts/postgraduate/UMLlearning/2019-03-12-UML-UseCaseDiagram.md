@@ -2,8 +2,8 @@
 layout: post
 title: "UML用例图"
 date: 2019-03-12 09:00:00 +0800
-categories: UML
-tag: UML用例图
+categories: UML语言
+tag: UML语言
 
 ---
 * content

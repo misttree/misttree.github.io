@@ -3,7 +3,7 @@ layout: post
 title: "排序算法总结"
 date: 2019-03-24 09:00:00 +0800 
 categories: 算法
-tags: 排序算法
+tags: 算法
 
 ---
 * content

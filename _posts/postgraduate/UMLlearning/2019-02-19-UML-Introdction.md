@@ -2,8 +2,8 @@
 layout: post
 title: "UML介绍"
 date: 2019-02-19 09:00:00 +0800
-categories: UML
-tag: UML介绍
+categories: UML语言
+tag: UML语言
 
 ---
 * content

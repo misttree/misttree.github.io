@@ -2,8 +2,8 @@
 layout: post
 title: "UML对象模型"
 date: 2019-02-26 09:00:00 +0800
-categories: UML
-tag: UML对象模型
+categories: UML语言
+tag: UML语言
 
 ---
 * content
