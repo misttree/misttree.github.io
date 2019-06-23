@@ -9,6 +9,9 @@ tag: UML类图
 * content
 {:toc}
 ---
+
+<!-- more -->
+
 ### 类图的概念
 - UML图本身较为简洁，内部蕴含较深刻的含义
 
@@ -23,7 +26,7 @@ tag: UML类图
 - 解释
 	- position：由若干个元素组成的，并且为私有成员不可访问
 	- contains（Point）：Boolean
-<!-- more -->
+
 		- 类内部的成员函数，接收的参数成员为Point类型
 		- 返回值为Boolean类型，用于判断给定的点是否为与该图形的内部
 - 绘制UML图
