@@ -9,13 +9,13 @@ baseurl: ""  #根目录
 description: 生命可以随心所欲，但不能随波逐流。
 motto: 昔风不起，唯有努力生存。
 #motto: 如果生活欺骗了你，不要悲伤，不要哭泣。
-banner: I do not know where to go,but I have been on the road.
+banner:
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
 excerpt_separator:  '<!-- more -->' #文章摘要
 paginate: 8
 paginate_path: "page:num"
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 github_username: misttree
 highlighter: rouge
