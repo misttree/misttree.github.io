@@ -17,18 +17,18 @@
           <a href="{{ '/' | prepend: site.baseurl }}">首页</a>
         </li>
         <li>
-          <a href="{{ '/categories/' | prepend: site.baseurl }}">博文分类</a>
+          {% comment %} <a href="{{ '/categories/' | prepend: site.baseurl }}">博文分类</a> {% endcomment %}
         </li>
         <li>
           <a href="{{ '/me/' | prepend: site.baseurl }}">个人简介</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a rel="nofollow" href="{{ '/reference' | prepend: site.baseurl }}">参考网址</a></li>
-        <li><a href="{{ '/effects' | prepend: site.baseurl }}">项目展示</a></li>
-        <li><a href="{{ '/donate' | prepend: site.baseurl }}">赞助作者</a></li>
-        <li><a rel="nofollow" href="{{ '/effects' | prepend: site.baseurl }}">个人界面</a></li> 
-        <li><a rel="nofollow" href="{{ '/talktome' | prepend: site.baseurl }}">和我聊天</a></li>
+        {% comment %} <li><a rel="nofollow" href="{{ '/reference' | prepend: site.baseurl }}">参考网址</a></li> {% endcomment %}
+        {% comment %} <li><a href="{{ '/effects' | prepend: site.baseurl }}">项目展示</a></li> {% endcomment %}
+        {% comment %} <li><a href="{{ '/donate' | prepend: site.baseurl }}">赞助作者</a></li> {% endcomment %}
+        {% comment %} <li><a rel="nofollow" href="{{ '/effects' | prepend: site.baseurl }}">个人界面</a></li>  {% endcomment %}
+        {% comment %} <li><a rel="nofollow" href="{{ '/talktome' | prepend: site.baseurl }}">和我聊天</a></li> {% endcomment %}
              
         <!--
         <li><a rel="nofollow" target="_blank" href="{{site.resume_site}}">关于我</a></li> 
